@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Error handeling</h2>
+    <p>In this we will be creating a purposefull error to make tinu understand error handeling.</p>
+    <h5>ERROR :</h5>
+     <p id="c"></p>
+    <script>
+        try{
+            number(9);
+        }
+        catch(err){//'err' is a call-back function.
+            document.getElementById("c").innerHTML=err.message;//error message will display as number is not defined.
+        }
+    </script>
+</body>
+</html>
